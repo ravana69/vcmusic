@@ -90,7 +90,7 @@ async def killbot(_, message):
     quit()
 
 
-@app.on_message(filters.command("play") & filters.chat(sudo_chat_id))
+@app.on_message(filters.command("play"))
 async def queuer(_, message):
     usage = "**Usage:**\n__**/play youtube/saavn/deezer Song_Name**__"
     if len(message.command) < 3:
@@ -126,7 +126,7 @@ async def skip(_, message):
     await play()
 
 
-@app.on_message(filters.command("queue") & filters.chat(sudo_chat_id))
+@app.on_message(filters.command("queue"))
 async def queue_list(_, message):
     if len(queue) != 0:
         i = 1
