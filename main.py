@@ -312,8 +312,8 @@ async def tgplay(_, message):
         await send("__**Reply to an audio.**__")
         return
     if message.reply_to_message.audio:
-        if int(message.reply_to_message.audio.file_size) >= 500000000:
-            await send("__**Bruh! Only songs within 500 MB.**__")
+        if int(message.reply_to_message.audio.file_size) >= 104857600:
+            await send("__**Bruh! Only songs within 100 MB.**__")
             playing = False
             return
         duration = message.reply_to_message.audio.duration
