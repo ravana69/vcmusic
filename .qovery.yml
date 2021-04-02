@@ -1,0 +1,11 @@
+---
+application:
+  name: "telegram-vc-bot"
+  project: "tgmusic"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-telegram-vc-bot"
+  routes:
+  - application_name: "telegram-vc-bot"
+    paths:
+    - "/*"
