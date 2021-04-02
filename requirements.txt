@@ -4,5 +4,5 @@ ffmpeg-python
 python-arq
 Pyrogram
 TgCrypto
-youtube-dl
+youtube-dl==2021.04.01
 aiofiles
